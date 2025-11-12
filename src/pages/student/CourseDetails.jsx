@@ -84,7 +84,7 @@ const [playerData , setPlayerData] = useState(null)
 
           <p className="text-sm">
             Course by{" "}
-            <span className="text-blue-600 underline">GreatStack</span>
+            <span className="text-blue-600 underline">Abhay Tomar</span>
           </p>
           <div className="pt-8 text-gray-800">
             <h2 className="text-xl font-semibold">Course Structure</h2>
@@ -170,14 +170,14 @@ const [playerData , setPlayerData] = useState(null)
         </div>
 
         {/* right column */}
-        <div className="max-w-[424px]  z-10  rounded-t  md:rounded-none overflow-hidden bg-white min-w-[300px] sm:min-w-[420px]">
+        <div className="max-w-[424px] z-10  rounded-t   shadow-[0_-2px_8px_rgba(0,0,0,0.25)] md:rounded-none overflow-hidden bg-white min-w-[300px] sm:min-w-[420px]">
           {
             playerData ?
            <Youtube videoId={playerData.videoId} opts={{playerVars: { autoplay: 1}}} iframeClassName='w-full aspect-video'/>
            :  <img src={courseData.courseThumbnail} alt="" />
           }
        
-          <div className="pt-5">
+          <div className="pt-5 ml-2">
             <div className="flex items-center gap-2">
               <img className="w-3.5" src={assets.time_left_clock_icon} alt="" />
               <p className="text-red-500">
@@ -201,7 +201,7 @@ const [playerData , setPlayerData] = useState(null)
                 {courseData.discount}% off
               </p>
             </div>
-            <div className="flex items-center texxt-sm md:text-default gap-4 pt-2 md:pt-4 text-gray-500">
+            <div className="flex items-center text-sm md:text-default gap-4 pt-2 md:pt-4 text-gray-500">
               <div className="flex items-center gap-1">
                 <img src={assets.star} alt="star icon" />
                 <p>{calculateRating(courseData)}</p>
@@ -221,11 +221,11 @@ const [playerData , setPlayerData] = useState(null)
                 <p>{calculateNoLectures(courseData)} lessons</p>
               </div>
             </div>
-            <button className="md:mt-6 mt-4 w-full py-3 rounded bg-blue-600 text-white font-medium">
+            <button className="md:mt-6 mt-4 w-[400px] ml-1 py-3 rounded bg-blue-600 text-white font-medium">
               {isAlreadyEnrolled ? "Already Enrolled" : "Enroll Now"}
             </button>
 
-            <div className="pt-6 ">
+            <div className="pt-6 ml-2">
               <p className="md:text-xl text-lg font-medium text-gray-800">
                 What's in the course
               </p>

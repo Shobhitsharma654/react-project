@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets'
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white border-t py-6 px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+    <footer className="w-full bg-gray-300 border-t py-6 px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
 
       {/* Left - Logo + Text */}
       <div className="flex items-center gap-4">
