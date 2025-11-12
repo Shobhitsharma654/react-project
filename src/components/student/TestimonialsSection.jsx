@@ -49,12 +49,11 @@ const TestimonialsSection = () => {
             </div>
 
             {/* Read More */}
-            <a
-              href="#"
-              className="text-blue-500 underline px-5 hover:text-blue-700 transition"
+            <h1
+              className="text-blue-500 px-5 hover:text-blue-700 transition"
             >
               Read more
-            </a>
+            </h1>
           </div>
         ))}
       </div>

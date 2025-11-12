@@ -28,7 +28,7 @@ const CoursesSection = () => {
       </div>
 
       {/* Show All Button */}
-      <div className="mt-10">
+      <div className="mt-10 flex justify-center md:justify-center">
         <Link
           to="/course-list"
           onClick={() => scrollTo(0, 0)}
